@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleClick = () => {
+    setNav(!nav);
+  };
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex items-center w-full h-full">
@@ -24,8 +29,9 @@ const Navbar = () => {
           <button className="px-8 py-3">Sing Up</button>
         </div>
 
-        <div className="md:hidden ">
-          <FiMenu className="w-5  " />
+        <div className="md:hidden mr-3  absolute right-0">
+          <FiMenu onClick={handleClick} className="w-7 h-8" />
+          TiTimes
         </div>
       </div>
 
