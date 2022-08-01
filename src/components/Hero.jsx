@@ -28,7 +28,7 @@ function Hero() {
           >
             ff
             <p>Data Services</p>
-            <div>
+            <div className="flex px-4 py-2 flex-wrap">
               <p className=" flex px-4 py-2   text-slate-500">
                 <AiFillDatabase className="h-6 mr-2" /> App Security
               </p>
