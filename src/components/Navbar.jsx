@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { TiTimes } from "react-icons/ti";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Brand.</h1>
 
-          <ul className="hidden md:flex">
+          <ul className="hidden md:justify-end md:flex">
             <li>Home</li>
             <li>About</li>
             <li>Support</li>
@@ -22,20 +23,29 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden pr-4 md:flex">
+        <div className="hidden pr-4 md:flex  absolute right-0">
           <button className="border-none bg-transparent text-black mr-4">
             Sign In
           </button>
           <button className="px-8 py-3">Sing Up</button>
         </div>
 
-        <div className="md:hidden mr-3  absolute right-0">
-          <FiMenu onClick={handleClick} className="w-7 h-8" />
-          TiTimes
+        <div onClick={handleClick} className="md:hidden mr-3  absolute right-0">
+          {!nav ? (
+            <FiMenu className="w-7 h-8" />
+          ) : (
+            <TiTimes className="w-7 h-8" />
+          )}
         </div>
       </div>
 
-      <ul className=" md:hidden text-center absolute bg-zinc-200 w-full px-8">
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : " md:hidden text-center absolute bg-zinc-200 w-full px-8"
+        }
+      >
         <li className="border-b-2 border-zinc-300 w-full">Home</li>
         <li className="border-b-2 border-zinc-300 w-full">About</li>
         <li className="border-b-2 border-zinc-300 w-full">Support</li>
