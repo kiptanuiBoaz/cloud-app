@@ -21,33 +21,26 @@ function Hero() {
           <div>
             <img className="w-full" src={bgimg} alt="techies" />
           </div>
-          <div className="absolute flex-col flex py-8 md:min-w-[760px] bottom-[-5%] mx-1 md:left-1/2 transform">
+          <div
+            className="absolute flex-col flex py-8 md:min-w-[760px] 
+              bottom-[-5%] mx-1 md:left-1/2 transform md:-translate-x-1/2
+             bg-zinc-200 border-slate-300 rounded-xl text-center shadow-xl"
+          >
+            ff
             <p>Data Services</p>
             <div>
-              <p>
-                <span>
-                  <AiFillDatabase />
-                </span>
-                App Security
+              <p className=" flex px-4 py-2   text-slate-500">
+                <AiFillDatabase className="h-6 mr-2" /> App Security
               </p>
-              <p>
-                <span>
-                  <HiDatabase />
-                </span>
-                Security
+              <p className=" flex px-4 py-2  text-slate-500">
+                <HiDatabase className="h-6 mr-2" /> Security
               </p>
 
-              <p>
-                <span>
-                  <FaCloudUploadAlt />
-                </span>
-                Cloud Data
+              <p className=" flex px-4 py-2  text-slate-500">
+                <FaCloudUploadAlt className="h-6 mr-2" /> Cloud Data
               </p>
-              <p>
-                <span>
-                  <FaPaperPlane />
-                  API
-                </span>
+              <p className="flex px-4 py-2  text-slate-500">
+                <FaPaperPlane className="h-6 mr-2" /> API
               </p>
             </div>
           </div>
