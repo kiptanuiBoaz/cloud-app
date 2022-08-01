@@ -21,13 +21,34 @@ function Hero() {
           <div>
             <img className="w-full" src={bgimg} alt="techies" />
           </div>
-          <div>
+          <div className="absolute flex-col flex py-8 md:min-w-[760px] bottom-[-5%] mx-1 md:left-1/2 transform">
             <p>Data Services</p>
             <div>
-              <AiFillDatabase />
-              <HiDatabase />
-              <FaPaperPlane />
-              <FaCloudUploadAlt />
+              <p>
+                <span>
+                  <AiFillDatabase />
+                </span>
+                App Security
+              </p>
+              <p>
+                <span>
+                  <HiDatabase />
+                </span>
+                Security
+              </p>
+
+              <p>
+                <span>
+                  <FaCloudUploadAlt />
+                </span>
+                Cloud Data
+              </p>
+              <p>
+                <span>
+                  <FaPaperPlane />
+                  API
+                </span>
+              </p>
             </div>
           </div>
         </div>
