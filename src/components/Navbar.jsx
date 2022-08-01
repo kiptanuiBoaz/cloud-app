@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex items-center w-full h-full">
-        <div className="flex items-center">
+        <div className="flex w-full   items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Brand.</h1>
 
-          <ul className="hidden md:justify-end md:flex">
+          <ul className="hidden   md:flex">
             <li>Home</li>
             <li>About</li>
             <li>Support</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden pr-4 md:flex  absolute right-0">
+        <div className="hidden pr-4 md:flex  absolute right-6">
           <button className="border-none bg-transparent text-black mr-4">
             Sign In
           </button>
