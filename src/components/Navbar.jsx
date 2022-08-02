@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { TiTimes } from "react-icons/ti";
+import Brand from "./Brand";
+import NavItems from "./NavItems";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,15 +14,8 @@ const Navbar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex items-center w-full h-full">
         <div className="flex w-full   items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Brand.</h1>
-
-          <ul className="hidden text-1.5xl  md:flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Support</li>
-            <li>Platforms</li>
-            <li>Pricing</li>
-          </ul>
+          <Brand />
+          <NavItems nstyle="hidden text-1.5xl  md:flex" />
         </div>
 
         <div className="hidden pr-4 md:flex text-1.5xl  absolute right-6">
