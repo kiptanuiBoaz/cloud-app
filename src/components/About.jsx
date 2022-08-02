@@ -1,4 +1,5 @@
 import React from "react";
+import aboutArray from "../assets/about.js";
 
 const About = () => {
   return (
@@ -13,17 +14,17 @@ const About = () => {
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores et quas molestias excepturi sint occaecati
           </p>
-          <div>
-            <p>100%</p>
-            <p>completion</p>
-          </div>
-          <div>
-            <p>24/7</p>
-            <p>Delivery</p>
-          </div>
-          <div>
-            <p>100K</p>
-            <p>Transactions</p>
+          <div className="grid md:grid-cols-3 gap-1 px-2 text-center">
+            {aboutArray.map((aboutItem) => {
+              return (
+                <div className="border mx-2 py-8 rounded-xl shadow-xl">
+                  <p className="text-6xl font-bold text-indigo-600">
+                    {aboutItem.header}
+                  </p>
+                  <p className="text-gray-400 mt-2">{aboutItem.footer}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

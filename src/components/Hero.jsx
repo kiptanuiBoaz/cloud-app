@@ -29,17 +29,19 @@ function Hero() {
             <p className="font-bold">Data Services</p>
             <div className="flex px-4 py-2 flex-wrap">
               <p className=" flex px-4 py-2   text-slate-500">
-                <AiFillDatabase className="h-6 mr-2" /> App Security
+                <AiFillDatabase className="h-6 mr-2 text-indigo-600" /> App
+                Security
               </p>
               <p className=" flex px-4 py-2  text-slate-500">
-                <HiDatabase className="h-6 mr-2" /> Security
+                <HiDatabase className="h-6 mr-2 text-indigo-600" /> Security
               </p>
 
               <p className=" flex px-4 py-2  text-slate-500">
-                <FaCloudUploadAlt className="h-6 mr-2" /> Cloud Data
+                <FaCloudUploadAlt className="h-6 mr-2 text-indigo-600" /> Cloud
+                Data
               </p>
               <p className="flex px-4 py-2  text-slate-500">
-                <FaPaperPlane className="h-6 mr-2" /> API
+                <FaPaperPlane className="h-6 mr-2 text-indigo-600" /> API
               </p>
             </div>
           </div>
