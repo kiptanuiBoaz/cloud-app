@@ -14,7 +14,7 @@ const About = () => {
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores et quas molestias excepturi sint occaecati
           </p>
-          <div className="grid md:grid-cols-3 gap-1 px-2 text-center">
+          <div className="grid md:grid-cols-3 gap-1 px-2 mt-2 text-center">
             {aboutArray.map((aboutItem) => {
               return (
                 <div className="border mx-2 py-8 rounded-xl shadow-xl">
