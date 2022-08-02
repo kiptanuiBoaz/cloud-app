@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex w-full   items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Brand.</h1>
 
-          <ul className="hidden   md:flex">
+          <ul className="hidden text-1.5xl  md:flex">
             <li>Home</li>
             <li>About</li>
             <li>Support</li>
@@ -23,11 +23,11 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden pr-4 md:flex  absolute right-6">
+        <div className="hidden pr-4 md:flex text-1.5xl  absolute right-6">
           <button className="border-none bg-transparent text-black mr-4">
             Sign In
           </button>
-          <button className="px-8 py-3">Sing Up</button>
+          <button className="px-8 py-3">Sign Up</button>
         </div>
 
         <div onClick={handleClick} className="md:hidden mr-3  absolute right-0">
