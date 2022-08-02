@@ -9,9 +9,9 @@ import supportImg from "../assets/support.jpg";
 
 const Support = () => {
   return (
-    <div>
-        <div>
-            <img src={supportImg} alt="support"/>
+    <div className="w-full h-screen mt-24">
+        <div className="w-full h-[700px] bg-gray-900/90 absolute">
+            <img  className="w-full h-full object-cover mix-blend-overlay" src={supportImg} alt="support"/>
         </div>
         <div>
             <div>
@@ -19,7 +19,8 @@ const Support = () => {
                 <h2>Support</h2>
                 <h3>Finding the right team</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos</p>
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos
+                </p>
             </div>
             <div>
                 <div>
