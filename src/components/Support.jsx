@@ -14,6 +14,7 @@ const Support = () => {
             <img  className="w-full h-full object-cover mix-blend-overlay" src={supportImg} alt="support"/>
         </div>
         <div className="w-[1240px] mx-auto  text-white relative " >
+
             <div className="px-4 py-12">
                 
                 <h2 className=' text-3xl pt-8 text-slate-300 uppercase text-center'>Support</h2>
@@ -56,7 +57,7 @@ const Support = () => {
                         <p className="flex  items-center  text-indigo-600">Contact Us <BsArrowRightShort/></p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
