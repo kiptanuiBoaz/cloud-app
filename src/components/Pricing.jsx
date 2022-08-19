@@ -23,13 +23,13 @@ function Pricing() {
                         <p className="text-6xl font-bold py-4 flex"> $0<span className="text-xl text-slate-500 flex flex-col justify-end">/mo</span></p>
                     </div>
                     <p className="text-2xl py-8 text-slate-500 flex ">Utilizzato nel settore della tipografia e della stampa</p>
-                    <div className="text-2xl">
+                    <div className="    text-2xl">
+                        <p className="  flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
-                        <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-red-600"/>Nel settore  tipografia</p>
-                        <button className="w-full  hover:text-red-900 bg-red-900 border-red-900 py-4 my-4">Get Started </button>
+                        <button className="w-[400px]  md:w-full sm:w-[500px] hover:text-red-900 bg-red-900 border-red-900 py-4 my-4">Get Started </button>
                     </div>
                 </div>
 
@@ -41,12 +41,12 @@ function Pricing() {
                     </div>
                     <p className="text-2xl py-8 text-slate-500 flex ">Utilizzato nel settore della tipografia e della stampa</p>
                     <div className="text-2xl">
+                        <p className="flex  py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
-                        <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-indigo-600"/>Nel settore  tipografia</p>
-                        <button className="w-full py-4 my-4">Get Started </button>
+                        <button className=" w-[400px]  md:w-full sm:w-[500px] py-4 my-4">Get Started </button>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ function Pricing() {
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-green-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-green-600"/>Nel settore  tipografia</p>
                         <p className="flex py-4"><BsCheckLg  className="w-7 mr-4 text-green-600"/>Nel settore  tipografia</p>
-                        <button className="w-full  hover:text-green-900 bg-green-900 border-green-900 py-4 my-4">Get Started </button>
+                        <button className="w-[400px]  md:w-full sm:w-[500px]  hover:text-green-900 bg-green-900 border-green-900 py-4 my-4">Get Started </button>
                     </div>
                 </div>
             </div>
