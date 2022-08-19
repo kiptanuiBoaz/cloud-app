@@ -3,7 +3,7 @@ import {BsCheckLg} from 'react-icons/bs';
 
 function Pricing() {
   return (
-    <div className="w-full text-white my-24">
+    <div name="pricing" className="w-full text-white my-24">
 
         <div className=" mix-blend-overlay w-full bg-slate-900 absolute h-[700px]"></div>
 

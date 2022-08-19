@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link,animateScroll as scroll } from 'react-scroll'
+
 import { FiMenu } from "react-icons/fi";
 import { TiTimes } from "react-icons/ti";
 
@@ -13,13 +15,14 @@ const Navbar = () => {
       <div className="px-2 flex items-center w-full h-full">
         <div className="flex w-full   items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Brand.</h1>
-
+         
           <ul className="hidden text-1.5xl  md:flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Support</li>
-            <li>Platforms</li>
-            <li>Pricing</li>
+            <li><Link  to="home"  smooth={true} duration={500}>Home</Link></li>
+            <li><Link  to="about"  smooth={true} offset={-200} duration={500} >About</Link></li>
+            <li><Link  to="support"  smooth={true} offset={-90} duration={500} >Support</Link></li>
+            <li><Link  to="platforms"  smooth={true} offset={-200} duration={500} >Platforms</Link></li>
+            <li><Link  to="pricing"  smooth={true} offset={-50} duration={500} >Pricing</Link></li>
+            
           </ul>
         </div>
 
