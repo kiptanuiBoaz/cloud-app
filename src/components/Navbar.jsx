@@ -30,7 +30,7 @@ const Navbar = () => {
           <button className="px-8 py-3">Sign Up</button>
         </div>
 
-        <div onClick={handleClick} className="md:hidden mr-3  absolute right-0">
+        <div onClick={handleClick} className="md:hidden pr-5   right-0">
           {!nav ? (
             <FiMenu className="w-7 h-8" />
           ) : (
