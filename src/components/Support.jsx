@@ -13,8 +13,8 @@ const Support = () => {
         <div className="w-full h-[700px] bg-gray-900/90 absolute">
             <img  className="w-full h-full object-cover mix-blend-overlay" src={supportImg} alt="support"/>
         </div>
-        <div className="w-[1240px] mx-auto  text-white relative " >
-
+        <div className="max-w-[1240px] mx-auto  text-white relative " >
+        
             <div className="px-4 py-12">
                 
                 <h2 className=' text-3xl pt-8 text-slate-300 uppercase text-center'>Support</h2>
@@ -29,14 +29,14 @@ const Support = () => {
                     <div className=" p-8">
                         <FiPhone className=" h-16 w-16 bg-indigo-600 p-4 text-white rounded-lg mt-[-4rem]"/>
                         <h3 className="font-bold text-2xl my-6">Sales</h3>
-                        <p className="text-grey-600 text-xl"  >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+                        <p className=" sm:w-screen text-grey-600 text-xl"  >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
                     </div>
                     <div className="bg-slate-100  pl-8 py-4 ">
                         <p className="flex  items-center  text-indigo-600">Contact Us <BsArrowRightShort/></p>
                     </div>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-2xl">
+                {/* <div className="bg-white rounded-xl shadow-2xl">
                     <div className=" p-8">
                         <HiChip  className=" h-16 w-16 bg-indigo-600 p-4 text-white rounded-lg mt-[-4rem]"/>
                         <h3 className="font-bold text-2xl my-6">Media Inquiries</h3>
@@ -56,7 +56,7 @@ const Support = () => {
                     <div className="bg-slate-100  pl-8 py-4 ">
                         <p className="flex  items-center  text-indigo-600">Contact Us <BsArrowRightShort/></p>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>
