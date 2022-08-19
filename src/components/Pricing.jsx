@@ -5,7 +5,7 @@ function Pricing() {
   return (
     <div className="w-full text-white my-24">
 
-        <div className=" mix-blend-overlay w-full bg-slate-900 absolute h-[800px]"></div>
+        <div className=" mix-blend-overlay w-full bg-slate-900 absolute h-[700px]"></div>
 
         <div className="max-w-[1240px] mx-auto py-12">
             <div className=" text-center py-8 text-slate-300">
