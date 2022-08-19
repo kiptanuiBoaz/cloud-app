@@ -11,13 +11,13 @@ const Support = () => {
   return (
     <div className="w-full mt-24">
         <div className="w-full h-[700px] bg-gray-900/90 absolute">
-            <img  className="w-full h-full object-cover mix-blend-overlay" src={supportImg} alt="support"/>
+            <img  className="w-full h-full  object-cover mix-blend-overlay" src={supportImg} alt="support"/>
         </div>
         <div className="max-w-[1240px] mx-auto  text-white relative " >
         
             <div className="px-4 py-12">
                 
-                <h2 className=' text-3xl mt-4 pt-8 text-slate-300 uppercase font-bold text-center'>Support</h2>
+                <h2 className=' text-3xl mt-4 pt-8 text-slate-300 uppercase  text-center'>Support</h2>
                 <h3 className="text-5xl font-bold py-6  text-center">Finding the right team</h3>
                 <p className="py-4  text-center text-3xl text-slate-300" >At vero eos et accusamus et iusto odio dignissimos ducimus qui
                     blanditiis praesentium voluptatum deleniti atque corrupti quosb landitiis praesentium
