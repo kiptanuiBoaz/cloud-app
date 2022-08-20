@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import ListItem from './ListItem';
+
 
 
 const MobileViewMenu = (props) => {
@@ -35,12 +35,7 @@ const MobileViewMenu = (props) => {
       <Link  to="pricing"  smooth={true} offset={-50} duration={500} >Pricing</Link>
     </li>
 
-    <ListItem
-     text={"something"}
-     to={"somewhere}"}
-     offset={11}
-    />
-    
+   
 
     <div className=" flex flex-col my-4">
       <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">Sign In</button>
