@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimg from "C:/Users/ADMIN/Desktop/WEB DEV/Projects/cloud-app/src/assets/cyber-bg.png";
+import bgimg from "../assets/cyber-bg.png";
 
 const HomeRight = ()=> {
   return (

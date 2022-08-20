@@ -3,7 +3,7 @@ import { HiChip } from 'react-icons/hi';
 import {  BsArrowRightShort } from 'react-icons/bs';
 import { MdSupport} from 'react-icons/md';
 import { FiPhone} from 'react-icons/fi';
-import supportImg from "../assets/support.jpg";
+import supportImg from "../components/assets/support.jpg";
 
 
 
