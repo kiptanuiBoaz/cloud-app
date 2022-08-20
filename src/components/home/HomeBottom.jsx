@@ -4,6 +4,7 @@ import { HiDatabase } from "react-icons/hi";
 import { FaPaperPlane } from "react-icons/fa";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import Service from './Service';
+import services from "./services"
 
 const  HomeBottom = () => {
 
@@ -30,10 +31,18 @@ const  HomeBottom = () => {
                 <p className="flex px-4 py-2  text-slate-500">
                     <FaPaperPlane className="h-6 mr-2 text-indigo-600" /> API
                 </p>
-                <Service
-                    icon={<HiDatabase/>}
-                    name={"something"}
-                />
+
+                {services.map(
+                    (service) =>{ 
+                        const Icon = service.icons
+                        return (
+                        <Service
+                            icon={<Icon/>}
+                            name={services.text}
+                        />
+                    )}
+                    )
+                }
             </div>
         </div>
     )
