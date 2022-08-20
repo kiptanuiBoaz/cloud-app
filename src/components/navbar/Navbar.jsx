@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import  NavList  from "./NavList";
-import { FiMenu } from "react-icons/fi";
-import { TiTimes } from "react-icons/ti";
-import { Link } from 'react-scroll';
 
+import { Link } from 'react-scroll';
+import Brand from "./Brand";
+import Buttons from "./Buttons";
+import Hamburger from "./Hamburger";
+
+
+// functiona component of the navigation bar at the top of the website
 const Navbar = () => {
 
+  // state to monitor the clicking of the hunberger menu
   const [nav, setNav] = useState(false);
 
+  // change the nav bool to true when the icons is clicked
   const handleClick = () => {
     setNav(!nav);
   };
@@ -16,24 +22,19 @@ const Navbar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex items-center w-full h-full">
         <div className="flex w-full   items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl">AW<span className="text-indigo-600">3</span>SOM<span className="text-indigo-600">3</span></h1>
+          <Brand/>
           <NavList/>
          
         </div>
 
         <div className="hidden pr-4 md:flex text-1.5xl  absolute right-6">
-          <button className="border-none bg-transparent text-black mr-4">
-            Sign In
-          </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <Buttons/>
         </div>
 
         <div onClick={handleClick} className="md:hidden pr-5   right-0">
-          {!nav ? (
-            <FiMenu className="w-7 h-8" />
-          ) : (
-            <TiTimes className="w-7 h-8" />
-          )}
+          <Hamburger 
+            nav={nav}
+          />
         </div>
       </div>
 
