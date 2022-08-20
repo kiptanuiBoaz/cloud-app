@@ -1,29 +1,24 @@
 import React, { useState } from "react";
-import { Link } from 'react-scroll'
-
+import  NavList  from "./NavList";
 import { FiMenu } from "react-icons/fi";
 import { TiTimes } from "react-icons/ti";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
+
   const [nav, setNav] = useState(false);
-  const active = {color:"red"};
+
   const handleClick = () => {
     setNav(!nav);
   };
+
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex items-center w-full h-full">
         <div className="flex w-full   items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">AW<span className="text-indigo-600">3</span>SOM<span className="text-indigo-600">3</span></h1>
+          <NavList/>
          
-          <ul className="hidden text-1.5xl  md:flex">
-            <li><Link  to="home" spy={true} activeClass={active} smooth={true} duration={1000}>Home</Link></li>
-            <li><Link  to="about" spy={true} activeClass="text-indigo-600" smooth={true} offset={-200} duration={1000} >About</Link></li>
-            <li><Link  to="support" spy={true} activeClass="text-indigo-600" smooth={true} offset={-90} duration={1000} >Support</Link></li>
-            <li><Link  to="platforms" spy={true} activeClass="text-indigo-600"  smooth={true} offset={-200} duration={1000} >Platforms</Link></li>
-            <li><Link  to="pricing" spy={true} activeClass="text-indigo-600" smooth={true} offset={-50} duration={1000} >Pricing</Link></li>
-            
-          </ul>
         </div>
 
         <div className="hidden pr-4 md:flex text-1.5xl  absolute right-6">
