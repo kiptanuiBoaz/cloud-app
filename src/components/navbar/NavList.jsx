@@ -5,6 +5,8 @@ import navlistItems from "../assets/navListItems";
 const  NavList = (props) =>{
 
   
+
+  
   return (
     <ul className=" select-none hidden text-1.5xl  md:flex">
       {/* mapping through all the list items */}

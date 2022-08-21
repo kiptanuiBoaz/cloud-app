@@ -27,7 +27,14 @@ const Navbar = () => {
           {/* brand name */}
           <Brand/>
           {/* nav items */}
-          <NavList/>
+          <NavList
+             className={
+              // toggle the menu on and off during the clicking event
+              !nav
+                ? "hidden"
+                : " md:hidden text-center absolute bg-zinc-200 w-full px-8"
+            }
+          />
          
         </div>
 
