@@ -8,8 +8,8 @@ const AllinOne= () =>{
     <div  name="platforms" className= "w-full my-32">
         <div className=" max-w-[1280px] mx-auto px-2">
            <PlatformsTop/>
-            <PlatItem/>
-            <div className= "grid sm:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+            
+           <PlatItem/>
                 {/* <div className="flex">
                     <div>
                         <AiOutlineCheck className="w-7 mr-4 txt-green-600"/>
@@ -98,7 +98,7 @@ const AllinOne= () =>{
                     </div>
                     
                 </div> */}
-            </div>
+            
         </div>
     </div>
   )

@@ -34,11 +34,11 @@ const platform= [
         description:"Suspendisse potenti. Mauris tristique scelerisque nisi. Proin quis quam erat. Nam nulla risus, fringilla vel elit eu, gravida porta nulla. Aenean tortor purus, b"
     },
 
+    {
+        title:"Cyber Security",
+        description:" Donec sodales nec nibh sed pharetra. In feugiat, diam eget laoreet lacinia, justo erat"
+    },
 
-    
-    
-    
-    
 ]
 
 export default platform;
