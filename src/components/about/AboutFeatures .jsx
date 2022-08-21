@@ -13,7 +13,7 @@ const  AboutFeatures  = () => {
                 /* args to tap into the individual array elements[i] */
               return (
                 <div className="border mt-4 mx-2 py-8 rounded-xl shadow-xl">
-                  <p className="text-6xl font-bold text-indigo-600">
+                  <p className="sm:text-6xl  text-5xl font-bold text-indigo-600">
                   {/* tapping into the item from the object */}
                     {header}
                   </p>
