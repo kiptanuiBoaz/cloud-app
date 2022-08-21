@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import navlistItems from '../assets/navListItems';
 
 
 
@@ -15,28 +16,22 @@ const MobileViewMenu = (props) => {
         : " md:hidden text-center absolute bg-zinc-200 w-full px-8"
     }
   >
-    <li className="border-b-2 border-zinc-300 w-full">
-      <Link  to="home"  smooth={true} offset={-600} duration={500}>Home</Link>
-    </li>
+   {
+    navlistItems.map(
+      (navlistItem)=>{
 
-    <li  className="border-b-2 border-zinc-300 w-full" >
-      <Link  to="about"  smooth={true} offset={-200} duration={500} >About</Link>
-    </li>
+        const {to,offset,text} = navlistItem;
+        return(
+          <li className="border-b-2 border-zinc-300 w-full">
+            <Link activeClass= "text-indigo-600" to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
+          </li>
 
-    <li className="border-b-2 border-zinc-300 w-full">
-      <Link  to="support"  smooth={true} offset={-90} duration={500} >Support</Link>
-    </li>
+        ) 
 
-    <li className="border-b-2 border-zinc-300 w-full">
-      <Link  to="platforms"  smooth={true} offset={-200} duration={500} >Platforms</Link>
-    </li>
-
-    <li className="border-b-2 border-zinc-300 w-full">
-      <Link  to="pricing"  smooth={true} offset={-50} duration={500} >Pricing</Link>
-    </li>
-
+      }
+    )
+   }
    
-
     <div className=" flex flex-col my-4">
       <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">Sign In</button>
       <button className="px-8 py-4">Sign Up</button>

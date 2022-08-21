@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Buttons = () => {
+const Buttons = (props) => {
     
   return (
     <>
-        <button className=  "border-none bg-transparent text-black mr-4"   > Sign In </button>
-        <button className="px-8 py-3">Sign Up</button>
+        <button className=  {`${props.btnstyle}`}> {props.text} </button>
+        
     </>
   )
 }

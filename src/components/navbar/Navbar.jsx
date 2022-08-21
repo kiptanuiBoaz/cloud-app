@@ -28,12 +28,7 @@ const Navbar = () => {
           <Brand/>
           {/* nav items */}
           <NavList
-             className={
-              // toggle the menu on and off during the clicking event
-              !nav
-                ? "hidden"
-                : " md:hidden text-center absolute bg-zinc-200 w-full px-8"
-            }
+             
           />
          
         </div>
@@ -42,6 +37,13 @@ const Navbar = () => {
         {/* sign in and sing up buttons */}
           <Buttons
             nav={nav}
+            btnstyle={"border-none bg-transparent text-black mr-4"}
+            text={"Sign In"}
+          />
+           <Buttons
+            nav={nav}
+            btnstyle={"px-8 py-3"}
+            text={"Sign Up"}
           />
         </div>
 
