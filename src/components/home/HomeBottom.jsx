@@ -6,6 +6,8 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import Service from './Service';
 
 const  HomeBottom = () => {
+    // the styling of the service icons
+    const IconSytle = "h-6 mr-2 text-indigo-600";
 
   return(
             <div className="absolute flex-col flex py-8 md:min-w-[650px] 
@@ -18,28 +20,29 @@ const  HomeBottom = () => {
                 
 
                 <Service
-                    icon={<AiFillDatabase className="h-6 mr-2 text-indigo-600"/>}
+                // accesing the styling using template literals i.e converting a multylinr var to string
+                    icon={<AiFillDatabase className={`${IconSytle}`}/>}
                     name={" Security"}
                 />
                 
                 <Service
-                    icon={<HiDatabase className="h-6 mr-2 text-indigo-600"/>}
+                    icon={<HiDatabase className={`${IconSytle}`}/>}
                     name={"Security"}
                 />
                 
                 <Service
-                    icon={<FaCloudUploadAlt className="h-6 mr-2 text-indigo-600"/>}
+                    icon={<FaCloudUploadAlt className={`${IconSytle}`}/>}
                     name={"Cloud Data"}
                 />
 
                 <Service
-                    icon={<FaPaperPlane className="h-6 mr-2 text-indigo-600"/>}
-                    name={" API"}
+                    icon={<FaPaperPlane className={`${IconSytle}`}/>}
+                    name={"API"}
                 />
 
                 
                 <Service
-                    icon={<HiDatabase className="h-6 mr-2 text-indigo-600"/>}
+                    icon={<HiDatabase className={`${IconSytle}`}/>}
                     name={"Database"}
                 />
                   

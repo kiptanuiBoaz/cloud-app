@@ -4,7 +4,7 @@ import Hero from "./components/home/Hero";
 import About from "./components/about/About";
 import Support from "./components/support/Support";
 import AllinOne from "./components/platforms/AllinOne";
-import Pricing from "./components/Pricing";
+import Pricing from "./components/pricing/Pricing";
 import Footer from "./components/Footer";
 
 function App() {

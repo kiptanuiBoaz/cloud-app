@@ -1,15 +1,23 @@
 import React from "react";
 import { Link } from 'react-scroll';
+import navlistItems from "../assets/navListItems";
 
 const  NavList = (props) =>{
+
+  
   return (
     <ul className="hidden text-1.5xl  md:flex">
+      {/* mapping through all the list items */}
+        {navlistItems.map((navlistItem)=>{
+
+          /* destructuring the navListItem Object */
+          const {to,offset,text} = navlistItem;
+
+          return (
+            <li className={props.styleClasses}><Link  to={to} spy={true} activeClass="text-indigo-600"  smooth={true} offset={offset} duration={1000} >{text}</Link></li>
+          )
+      })}
       
-      <li className={props.styleClasses}><Link  to="about" spy={true} activeClass="text-indigo-600"  smooth={true} offset={-200} duration={1000} >About</Link></li>
-      <li className={props.styleClasses}><Link  to="support" spy={true} activeClass="text-indigo-600" smooth={true} offset={-90} duration={1000} >Support</Link></li>
-      <li className={props.styleClasses}><Link  to="platforms" spy={true} activeClass="text-indigo-600"  smooth={true} offset={-200} duration={1000} >Platforms</Link></li>
-      <li className={props.styleClasses}><Link  to="pricing" spy={true} activeClass="text-indigo-600" smooth={true} offset={-50} duration={1000} >Pricing</Link></li>
-    
     </ul>
   )
 }
