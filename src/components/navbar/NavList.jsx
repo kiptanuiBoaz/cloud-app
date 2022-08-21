@@ -6,7 +6,7 @@ const  NavList = (props) =>{
 
   
   return (
-    <ul className="hidden text-1.5xl  md:flex">
+    <ul className=" select-none hidden text-1.5xl  md:flex">
       {/* mapping through all the list items */}
         {navlistItems.map((navlistItem)=>{
 
@@ -14,7 +14,7 @@ const  NavList = (props) =>{
           const {to,offset,text} = navlistItem;
 
           return (
-            <li className={props.styleClasses}><Link  to={to} spy={true} activeClass="text-indigo-600"  smooth={true} offset={offset} duration={1000} >{text}</Link></li>
+            <li className={props.styleClasses}><Link  to={to} spy={true} activeClass="text-indigo-600 "  smooth={true} offset={offset} duration={1000} >{text}</Link></li>
           )
       })}
       
