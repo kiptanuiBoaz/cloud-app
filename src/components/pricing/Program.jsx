@@ -20,7 +20,7 @@ import {BsCheckLg} from 'react-icons/bs';
     <span className={`uppercase px-3 py-1  ${titleStyle}  rounded-2xl text-sm`}>{tagText}</span>
 
     <div>
-        <p className="text-6xl font-bold py-4 flex"> ${cost}<span className="text-xl text-slate-500 flex flex-col justify-end">/mo</span></p>
+        <p className=" text-4xl sm:text-5xl  md:text-6xl font-bold py-4 flex"> ${cost}<span className="text-xl text-slate-500 flex flex-col justify-end">/mo</span></p>
     </div>
     <p className="text-2xl py-5 text-slate-500 flex ">Utilizzato nel settore della tipografia e della stampa</p>
     <div className="items-center text-2xl">
