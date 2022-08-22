@@ -5,7 +5,7 @@ import About from "./components/about/About";
 import Support from "./components/support/Support";
 import AllinOne from "./components/platforms/AllinOne";
 import Pricing from "./components/pricing/Pricing";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (

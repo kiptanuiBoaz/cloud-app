@@ -1,6 +1,8 @@
 import React from "react";
 import {FaFacebookF} from 'react-icons/fa';
 import {BsInstagram,BsGithub,BsTwitter} from 'react-icons/bs';
+import FooterForm from "./footerForm";
+
 
 
 function Footer() {
@@ -42,7 +44,7 @@ function Footer() {
             </div>
 
             <div>
-                <h6 className="font-bold ml-3 uppercase pt-2">Legal</h6>
+                <h6 className="font-bold  uppercase pt-2">Legal</h6>
                 <ul>
                     <li className="py-1">Privacy</li>
                     <li className="py-1">Claims</li>
@@ -52,15 +54,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className="col-span-2 pt-8 md:pt-2">
-            <p className="font-bold uppercase">Subscribe to our newsletter</p>
-            <p className="py-4">The latest news, articles and resources sent to your inbox</p>
-            <form className="flex flex-col sm:flex-row">
-                <input className="w-full p-2 rounded-md mr-4 mb-4" type="email" placeholder="Enter your Email..."></input>
-                <button className="mb-4 p-2">Subscribe</button>
-            </form>
-
-            </div>
+            <FooterForm/>
 
             <div className=" flex flex-col px-2 py-4 max-w-[1240px]  m-auto  justify-between sm:flex-row text-center text-gray-500">
                 <p className="py-4"> Copyright ©{new Date().getFullYear()} || All rights reserved Awesome LLC </p>

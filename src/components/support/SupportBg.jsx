@@ -9,7 +9,7 @@ const SupportBg = () => {
     //  content to absolute
     // the position has to be absolute
     <div className="w-full h-[670px] bg-gray-900/90 absolute">
-        <img  className="w-full h-full  object-cover mix-blend-overlay" src={supportImg} alt="support"/>
+        <img  className="w-full h-full  object-cover mix-blend-overlay " src={supportImg} alt="support"/>
     </div>
     )
 }

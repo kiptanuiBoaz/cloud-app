@@ -17,7 +17,7 @@ function Pricing() {
                     <PricingTop/>
 
                     <div className="grid md:grid-cols-3">
-                
+                        {/* free*/}
                         <Program
                            
                             titleStyle="text-red-900 bg-red-200"
@@ -28,6 +28,7 @@ function Pricing() {
                             cost = "0"
                         />
 
+                          {/* standard*/}
                         <Program
                             
                             titleStyle="bg-indigo-200 text-indigo-900"
@@ -37,6 +38,7 @@ function Pricing() {
                             cost = "49"
                         />
 
+                          {/* premium*/}
                         <Program
                             
                             titleStyle=" bg-green-200 text-green-900"
