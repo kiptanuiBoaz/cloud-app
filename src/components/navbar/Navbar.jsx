@@ -28,7 +28,8 @@ const Navbar = () => {
           <Brand/>
           {/* nav items */}
           <NavList
-             
+             liStyle="select-none hidden text-1.5xl  md:flex"
+             ulStyle="select-none"
           />
          
         </div>
@@ -58,7 +59,11 @@ const Navbar = () => {
       {/* menu that displays as dropdown from hamburger */}
       <MobileViewMenu
          nav={nav}
+         ulStyle="md:hidden text-center absolute bg-zinc-200 w-full px-8"
+         liStyle= "border-b-2 border-zinc-300 w-full select-none"
       />
+
+      
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import {BsCheckLg} from 'react-icons/bs';
-import Premium from "./Premium";
+import Program from "./Program";
 import PricingBg from "./PricingBg";
 import PricingTop from "./PricingTop";
 
@@ -13,9 +13,21 @@ function Pricing() {
                     <PricingTop/>
 
                     <div className="grid md:grid-cols-3">
-                        <Premium 
-                            style={`text-2xl text-indigo-200`}
-                        />
+                        {()=>{
+                            const  premiumArr = ["Donec et diam lectus","Mauris cursus mauris ac sem"," sit amet elementum","Nulla facilisi raesent fringilla"," Lorem ipsum dolor sit amet"];
+                            const standardArr =["Etiam a ultricies sapien","Nulla facilisi raesent fringilla","Donec et diam lectus","Mauris cursus mauris ac sem","Nunc rutrum  in facilisis"];
+                            const freeArr =["Nunc rutrum  in facilisis ","Etiam a ultricies sapien","Fusce tincidunt nisl mauris","Mauris interdum quis risus ut","Nulla facilisi raesent fringilla"];
+
+                            return(
+                                <Program
+                                    spanBgColor="bg-red-200"
+                                    
+                                />
+                            )
+
+                            
+                        }}
+                        
                         <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
                             <span className="uppercase px-3 py-1 bg-red-200 text-red-900 rounded-2xl text-sm">Free</span>
                         

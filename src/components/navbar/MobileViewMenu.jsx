@@ -6,14 +6,21 @@ import navlistItems from '../assets/navListItems';
 
 const MobileViewMenu = (props) => {
 
-    const nav = props.nav
+  // state to monitor click
+  const nav = props.nav;
+  // style for the  unordered list
+  const ulStyle = props.ulStyle;
+  // style for the li element
+  const liStyle = props.liStyle;
+    
+    
   return (
     <ul
     className={
         // toggle the menu on and off during the clicking event
       !nav
         ? "hidden"
-        : " md:hidden text-center absolute bg-zinc-200 w-full px-8"
+        : `${ulStyle}`
     }
   >
    {
@@ -22,8 +29,8 @@ const MobileViewMenu = (props) => {
 
         const {to,offset,text} = navlistItem;
         return(
-          <li className="border-b-2 border-zinc-300 w-full">
-            <Link activeClass= "text-indigo-600" to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
+          <li className={`${liStyle}`}>
+            <Link activeClass="text-indigo-600" to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
           </li>
 
         ) 

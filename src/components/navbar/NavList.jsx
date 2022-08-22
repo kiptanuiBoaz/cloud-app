@@ -16,7 +16,11 @@ const  NavList = (props) =>{
           const {to,offset,text} = navlistItem;
 
           return (
-            <li className={props.styleClasses}><Link  to={to} spy={true} activeClass="text-indigo-600 "  smooth={true} offset={offset} duration={1000} >{text}</Link></li>
+            <li >
+              <Link  to={to} spy={true} activeClass="text-indigo-600"  smooth={true} offset={offset} duration={1000} >
+                {text}
+              </Link>
+            </li>
           )
       })}
       
