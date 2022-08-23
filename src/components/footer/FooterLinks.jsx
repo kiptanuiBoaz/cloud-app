@@ -18,7 +18,7 @@ const  FooterLinks = (props) => {
                 
                 return(
                   
-                  <li className="py-1">{ linkList}</li>
+                  <li className="py-1 hover:text-1xl">{ linkList}</li>
                 )
               }
             )
