@@ -2,16 +2,40 @@ import React from "react";
 import {FaFacebookF} from 'react-icons/fa';
 import {BsInstagram,BsGithub,BsTwitter} from 'react-icons/bs';
 import FooterForm from "./footerForm";
+import FooterLinks from "./FooterLinks";
 
 
 
 function Footer() {
+    const solutions = ["Analytics", "Marketing", "Commerce", "Data", "Cloud"];
+    const support = ["Pricing", "Documentation", "Guides", "API Status", ""];
+    const company = ["About", "Blog", "Jobs", " Partners", "Press"];
+
+    const footerArr = [solutions, support, company];
   return (
     <div className="w-full mt-24 bg-slate-900 text-gray-300 py-8 px-2">
         <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6  border-b-2 py-8">
-
-            <div>
-                <h6 className="font-bold uppercase pt-2">Solutions</h6>
+            {
+                footerArr.map(
+                    (linkArr)=>{
+                        var i = 0;
+                        const linkTitle = footerArr[i++];
+                        const textTitle =linkTitle[i++]
+                        return(
+                            <div>
+                                <h6 className="font-bold uppercase pt-2">{`${textTitle}`}</h6>
+                                <ul>
+                                    <FooterLinks
+                                        linkArr={linkArr}
+                                    />
+                                </ul>
+                            </div>
+                        )
+                    }
+                )
+            }
+            {/* <div>
+                <h6 className=" font-bold uppercase pt-2">Solutions</h6>
                 <ul>
                     <li className="py-1">Analytics</li>
                     <li className="py-1">Marketing</li>
@@ -52,7 +76,7 @@ function Footer() {
                     <li className="py-1">Policies</li>
                     <li className="py-1">Conditions</li>
                 </ul>
-            </div>
+            </div> */}
 
             <FooterForm/>
 
