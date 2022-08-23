@@ -30,7 +30,7 @@ const MobileViewMenu = (props) => {
         const {to,offset,text} = navlistItem;
         return(
           <li className={`${liStyle}`}>
-            <Link activeClass="text-indigo-600" to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
+            <Link activeClass="text-indigo-600" onClick={()=> !nav} to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
           </li>
 
         ) 
