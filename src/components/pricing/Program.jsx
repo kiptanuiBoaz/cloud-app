@@ -1,20 +1,8 @@
 import React from "react";
 import {BsCheckLg} from 'react-icons/bs';
 
- const Premium = (props) => {
-  // text  of the program tag
-  const tagText = props.tagText;
-  // text color of the specifics
-  const textColor = props.textColor;
-  // title text color 
-  const titleStyle = props.titleStyle;
-  // arr of the specifics 
-  const speArr = props.speArr;
-  // the color styling of the buttons
-  const btnStyle = props.btnStyle;
-  // the cost of @ card
-  const cost = props.cost;
-
+ export const Program = ({tagText, textColor, titleStyle,speArr, btnStyle ,cost }) => {
+  
   return (
     <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
     <span className={`uppercase px-3 py-1  ${titleStyle}  rounded-2xl text-sm`}>{tagText}</span>
@@ -43,4 +31,3 @@ import {BsCheckLg} from 'react-icons/bs';
   )
 }
 
-export default Premium

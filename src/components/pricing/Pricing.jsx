@@ -1,5 +1,5 @@
 import React from "react";
-import Program from "./Program";
+import {Program} from "./Program";
 import PricingBg from "./PricingBg";
 import PricingTop from "./PricingTop";
 
