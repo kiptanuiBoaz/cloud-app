@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import  NavList  from "./NavList";
+import  {NavList}  from "./NavList";
 
 
-import Brand from "./Brand";
-import Buttons from "./Buttons";
-import Hamburger from "./Hamburger";
-import MobileViewMenu from "./MobileViewMenu";
+import {Brand} from "./Brand";
+import {Buttons} from "./Buttons";
+import {Hamburger} from "./Hamburger";
+import {MobileViewMenu} from "./MobileViewMenu";
 
 
 // functiona component of the navigation bar at the top of the website

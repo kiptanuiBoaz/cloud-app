@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from 'react-scroll';
 import navlistItems from "../assets/navListItems";
 
-const  NavList = (props) =>{
-
-  
-
-  
+export const  NavList = () =>{
   return (
     <ul className=" select-none hidden text-1.5xl  md:flex">
       {/* mapping through all the list items */}
@@ -28,5 +24,5 @@ const  NavList = (props) =>{
   )
 }
 
-export default NavList;
+
 

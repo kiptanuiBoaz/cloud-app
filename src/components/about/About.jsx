@@ -1,5 +1,5 @@
 import React from "react";
-import AboutFeatures from "./AboutFeatures .jsx";
+import {AboutFeatures} from "./AboutFeatures .jsx";
 
 import AboutTop from "./AboutTop.jsx";
 

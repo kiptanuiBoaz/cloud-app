@@ -2,7 +2,7 @@ import React from 'react';
 import aboutArray from "../assets/about.js";
 // import external array
 
-const  AboutFeatures  = () => {
+export const  AboutFeatures  = () => {
     // using map function to replicate the elements
   return (
     <div className="grid md:grid-cols-3 gap-1 px-2 mt-2 text-center">
@@ -25,4 +25,4 @@ const  AboutFeatures  = () => {
   )
 }
 
-export default AboutFeatures 
+ 

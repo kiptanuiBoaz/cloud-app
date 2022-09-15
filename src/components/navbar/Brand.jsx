@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-function Brand() {
+export const  Brand = () => {
 
   return (
     <h1 className="text-3xl select-none font-bold sm:ml-3  ml-0 mr-4 sm:text-4xl">
@@ -16,4 +16,3 @@ function Brand() {
   )
 }
 
-export default Brand

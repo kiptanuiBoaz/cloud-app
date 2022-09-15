@@ -4,28 +4,12 @@ import navlistItems from '../assets/navListItems';
 
 
 
-const MobileViewMenu = (props) => {
-
-  // state to monitor click
-  const nav = props.nav;
-  // style for the  unordered list
-  const ulStyle = props.ulStyle;
-  // style for the li element
-  const liStyle = props.liStyle;
-
-  const handleClick = props.hideFn;
-    
+export const MobileViewMenu = ({nav, ulStyle, liStyle, hideFn:handleClick}) => {
     
   return (
-    <ul
+    <ul className={ !nav ? "hidden" : `${ulStyle}`}>
+     {/* toggle the menu on and off during the clicking event */}
     
-    className={
-        // toggle the menu on and off during the clicking event
-      !nav
-        ? "hidden"
-        : `${ulStyle}`
-    }
-  >
    {
     navlistItems.map(
       (navlistItem)=>{
@@ -51,4 +35,3 @@ const MobileViewMenu = (props) => {
   )
 }
 
-export default MobileViewMenu
