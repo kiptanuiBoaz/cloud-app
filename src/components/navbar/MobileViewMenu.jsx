@@ -12,10 +12,13 @@ const MobileViewMenu = (props) => {
   const ulStyle = props.ulStyle;
   // style for the li element
   const liStyle = props.liStyle;
+
+  const handleClick = props.hideFn;
     
     
   return (
     <ul
+    
     className={
         // toggle the menu on and off during the clicking event
       !nav
@@ -29,8 +32,8 @@ const MobileViewMenu = (props) => {
 
         const {to,offset,text} = navlistItem;
         return(
-          <li className={`${liStyle}`}>
-            <Link activeClass="text-indigo-600" onClick={()=> !nav} to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
+          <li className={`${liStyle}`} >
+            <Link activeClass="text-indigo-600" onClick={handleClick} to={to} smooth={true} offset={offset} duration={500}>{text}</Link>
           </li>
 
         ) 

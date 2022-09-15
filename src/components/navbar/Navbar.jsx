@@ -13,6 +13,7 @@ const Navbar = () => {
 
   // state to monitor the clicking of the hunberger menu
   const [nav, setNav] = useState(false);
+  
 
   // change the nav bool to true when the icons is clicked
   const handleClick = () => {
@@ -61,6 +62,7 @@ const Navbar = () => {
          nav={nav}
          ulStyle="md:hidden text-center absolute bg-zinc-200 w-full px-8"
          liStyle= "border-b-2 border-zinc-300 w-full select-none"
+         hideFn= {handleClick}
       />
 
       
